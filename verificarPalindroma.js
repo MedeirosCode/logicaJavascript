@@ -1,4 +1,7 @@
-const palavras = ["reviver", "luz azul", "radar", "manhã"];
-const verificarPalavras = palavras => palavras === palavras.split('').reverse().join('');
-const resultados = palavras.map(verificarPalavras)
-console.log(resultados)
+const palavras = ["reviver", "luz azul", "radar", "manhã", "arara"];
+
+const resultado = [];
+palavras.forEach((palavra) =>
+  resultado.push(palavra === palavra.split("").reverse().join(""))
+);
+console.log(resultado.join("\n"));
